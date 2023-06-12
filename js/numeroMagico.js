@@ -50,8 +50,10 @@ const playGame = () => {
 
   if (verifyMaxMin(inputUser)) {
     if (parseInt(inputUser.value) === numWizard) {
+      inputUser.value = "";
       msgGame("Ganaste");
     } else {
+      inputUser.value = "";
       msgGame("Perdiste");
     }
   }
