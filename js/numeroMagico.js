@@ -19,6 +19,7 @@ const msgGame = (msg) => {
       imageWidth: 400,
       imageHeight: 200,
       imageAlt: "Gandalf derrotado",
+      confirmButtonColor: "#198754",
     });
   } else {
     Swal.fire({
@@ -28,6 +29,7 @@ const msgGame = (msg) => {
       imageWidth: 400,
       imageHeight: 200,
       imageAlt: "Gandalf riendo",
+      confirmButtonColor: "#198754",
     });
   }
 };
@@ -85,7 +87,7 @@ const start = (min, max) => {
     /* HTML */
     `<button class="btn btn-success btnStart" id="btnAdivinar" type="button">
       Adivinar
-      <i class="fa-solid fa-wand-magic-sparkles"></i>
+      <i class="fa-solid fa-wand-sparkles fa-beat"></i>
     </button>`;
 
   const btnAdivinar = document.getElementById("btnAdivinar");
@@ -108,5 +110,5 @@ startGame.addEventListener("click", () => {
     `;
   setTimeout(() => {
     start(min, max);
-  }, 2000);
+  }, 1000);
 });
